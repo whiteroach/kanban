@@ -7,7 +7,8 @@ export class inProgress extends Component {
   render() {
     const{arrProg,handleUpdate} = this.props;
     return (
-      <div className ='col-3'>
+      <div className ='col-3 columns'>
+        <h5>IN PROGRESS</h5>
         {
           arrProg.map(item => {
             return(

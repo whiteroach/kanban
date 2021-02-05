@@ -6,7 +6,8 @@ export class working extends Component {
   render() {
     const{arrWork, handleUpdate} = this.props;
     return (
-      <div className ='col-3'>
+      <div className ='col-3 columns'>
+        <h5>WORKING</h5>
         {
           arrWork.map( item => {
            return (

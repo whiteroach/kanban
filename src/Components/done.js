@@ -5,7 +5,8 @@ export class done extends Component {
   render() {
     const {arrDone, handleRemove} = this.props;
     return (
-      <div className ='col-3'>
+      <div className ='col-3 columns'>
+        <h5>DONE</h5>
         {
           arrDone.map( item => {
             return(

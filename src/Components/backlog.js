@@ -5,7 +5,8 @@ export class backlog extends Component {
   render() {
     const{arrBack,handleUpdate} = this.props;
     return (
-      <div className ='col-3'>
+      <div className ='col-3 columns column-left'>
+        <h5>BACKLOG</h5>
         {
           arrBack.map( item => {
             return (

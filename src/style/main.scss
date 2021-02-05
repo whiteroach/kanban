@@ -1,0 +1,78 @@
+
+
+body{
+  min-height: 100vh;
+  width: 100vw;
+  font-family: 'Ubuntu Mono', monospace !important; 
+  overflow-X: hidden;
+  padding: 10VH;
+}
+
+h5 {
+  border-bottom: black 1px solid;
+}
+
+.columns {
+  border-top: black solid 1px;
+  border-right:black solid 1px;
+  min-height: 100vh;
+}
+
+.column-left {
+  border-left:black solid 1px;
+  
+}
+
+
+%card-shared{
+  border:black 1px dotted;
+  padding:1rem;
+  margin:1rem;
+  border-radius: 3px;
+  text-align: left;
+  span{
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+.my-card{
+  @extend%card-shared;
+ 
+  background-color: rgba(255,0,0, 0.5)  !important;
+  // border-radius: 3px;
+
+}
+
+.last-card{
+  @extend%card-shared;
+  background-color: #999 !important;
+}
+
+.input-sticker{
+  width: 25vw;
+  border: 1px dashed black;
+  margin-bottom:3rem;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: start;
+    
+    .my-btn{
+      margin-top: 1rem;
+      border: black solid 1px!important;
+      width: 20%;
+      &:hover{
+        border: red solid 1px!important;
+      }
+    }
+  }
+}
+
+
+.dash {
+  border: black dashed 1px;
+  margin-bottom: 2rem;
+}

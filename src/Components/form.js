@@ -27,24 +27,26 @@ export class form extends Component {
 //I'm passing the value from this state to the function in app.js to create a new task inside the backlog
   handleSubmit = event => {
     event.preventDefault();
+    if(this.state.content !== '' && this.state.description !== ''){
 
-    this.props.handleNewBackLogElem(this.state.content, this.state.description);
-   
-    
-    this.setState({
-      content:'',
-      description:''
-    })
+      this.props.handleNewBackLogElem(this.state.content, this.state.description);
+     
+      
+      this.setState({
+        content:'',
+        description:''
+      })
+    }
   }
   render() {
     return (
-      <div>
+      <div className='input-sticker'>
         <form onSubmit = { this.handleSubmit}>
-          <label for ='content'></label>
+          <label for ='content'>Type</label>
           <input onChange={this.onChangeValue} type ='text' name='content' value={this.state.content}/>
-          <label for ='textarea'></label>
+          <label for ='textarea'>Description</label>
           <textarea onChange={this.onChangeDescription}name='textarea' value={this.state.description}/>
-          <input type ='submit' value='Add'/>
+          <input className='my-btn' type ='submit' value='Add'/>
         </form>
       </div>
     )
