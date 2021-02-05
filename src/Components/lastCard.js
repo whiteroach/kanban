@@ -6,8 +6,8 @@ export class lastCard extends Component {
     return (
       
       <div onClick= {() => {handleCancel(content.id)}}>
-        <p>{content.task}</p>
-        
+        <h5>{content.task}</h5>
+        <p>{content.description}</p>
       </div>
     )
   }

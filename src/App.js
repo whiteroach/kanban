@@ -15,10 +15,11 @@ export class App extends Component {
     tasks:[]
   }
   
-  createItem = (task) => {
+  createItem = (task, description) => {
     let newItem = {
       id: this.state.tasks.length +1,
       task: task,
+      description: description,
       status:1
     }
     this.setState({

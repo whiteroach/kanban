@@ -5,8 +5,8 @@ export class card extends Component {
     const{content,handleChange}= this.props;
     return (
       <div onClick = {()=> handleChange(content.id)}>
-        <p>{content.task}</p>
-        
+        <h5>{content.task}</h5>
+        <p>{content.description}</p>
       </div>
     )
   }
