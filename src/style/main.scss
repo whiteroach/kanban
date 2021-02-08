@@ -30,9 +30,22 @@ h5 {
   margin:1rem;
   border-radius: 3px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
   span{
     font-size: 14px;
     text-align: left;
+  }
+  // &:first-child{
+  //   text-align: end !important
+  // }
+  .cancel{
+     align-self: flex-end ;
+     cursor: pointer;
+     
+     &:hover{
+       color: white;
+     };
   }
 }
 
@@ -41,7 +54,6 @@ h5 {
  
   background-color: rgba(255,0,0, 0.5)  !important;
   // border-radius: 3px;
-
 }
 
 .last-card{

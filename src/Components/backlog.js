@@ -3,7 +3,7 @@ import Card from './card';
 
 export class backlog extends Component {
   render() {
-    const{arrBack,handleUpdate} = this.props;
+    const{arrBack,handleUpdate,handleRemove} = this.props;
     return (
       <div className ='col-3 columns column-left'>
         <h5>BACKLOG</h5>
@@ -13,6 +13,7 @@ export class backlog extends Component {
               <Card
               content = {item}
               handleChange = {handleUpdate}
+              handleCancel = {handleRemove}
               key= {item.id}/>
               
             )

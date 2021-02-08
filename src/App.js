@@ -66,10 +66,10 @@ export class App extends Component {
         <hr className='dash'></hr>
         <div className='row'>
 
-          <Backlog arrBack={back} handleUpdate={this.updateItem} />
+          <Backlog arrBack={back} handleUpdate={this.updateItem} handleRemove={this.removeItem}/>
 
-          <InProgress arrProg={inProg} handleUpdate={this.updateItem} />
-          <Working arrWork={work} handleUpdate={this.updateItem} />
+          <InProgress arrProg={inProg} handleUpdate={this.updateItem} handleRemove={this.removeItem}/>
+          <Working arrWork={work} handleUpdate={this.updateItem} handleRemove={this.removeItem}/>
 
           <Done arrDone={done} handleRemove={this.removeItem} />
 

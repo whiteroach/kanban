@@ -5,7 +5,7 @@ import Card from './card'
 
 export class inProgress extends Component {
   render() {
-    const{arrProg,handleUpdate} = this.props;
+    const{arrProg,handleUpdate,handleRemove} = this.props;
     return (
       <div className ='col-3 columns'>
         <h5>IN PROGRESS</h5>
@@ -15,6 +15,7 @@ export class inProgress extends Component {
               <Card
               content= {item}
               handleChange = {handleUpdate}
+              handleCancel = {handleRemove}
               key= {item.id}
               />
             )

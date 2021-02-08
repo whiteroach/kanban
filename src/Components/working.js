@@ -4,7 +4,7 @@ import Card from './card'
 
 export class working extends Component {
   render() {
-    const{arrWork, handleUpdate} = this.props;
+    const{arrWork, handleUpdate, handleRemove} = this.props;
     return (
       <div className ='col-3 columns'>
         <h5>WORKING</h5>
@@ -14,7 +14,7 @@ export class working extends Component {
            <Card
            content = {item}
            handleChange = {handleUpdate}
-           
+           handleCancel = {handleRemove}
            key= {item.id}
            />
            )
